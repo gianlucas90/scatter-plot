@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(#ee9ca7, #ffdde1);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding-left: 3rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 4rem;
+}
+
+#legend {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  text-align: right;
+}
+
+.no-dop,
+.dop {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.no-dop {
+  background-color: blue;
+}
+
+.dop {
+  background-color: red;
+}
+/* .bar:hover {
+  fill: brown;
+} */
+
+div#tooltip {
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  height: auto;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
